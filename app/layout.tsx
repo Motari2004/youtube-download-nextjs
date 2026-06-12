@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import './globals.css';
+// Remove the globals.css import for now
+// import './globals.css';
 
 export const metadata: Metadata = {
   title: 'YouTube Downloader',
@@ -13,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body style={{ margin: 0, padding: 0 }}>{children}</body>
     </html>
   );
 }
